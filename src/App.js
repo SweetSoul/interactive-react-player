@@ -2,28 +2,31 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
+  Button,
+  Stack,
+  Container,
+  Flex,
   theme,
+  Input,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import ReactPlayer from 'react-player';
+import VideoPlayer from './Components/videoplayer'
 
 
 function App() {
+  let url = "https://www.youtube.com/watch?v=Rq5SEhs9lws";
+
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <ReactPlayer url="https://www.youtube.com/watch?v=HgFzP5m1k_c" controls={true} volume={0} playing={true}/>
-          </VStack>
-        </Grid>
-      </Box>
+        <Flex 
+          minH="100vh" minW="100vw" 
+          alignItems="center" justifyContent="center"
+          flexDirection="column" 
+          p={5} 
+          backgroundColor="#0A0D12"
+        >
+          <Input id="videoURL" placeholder="URL do vídeo" mb="25" maxW='30%' justifySelf='center' />
+          <VideoPlayer url={url} />
+        </Flex>
     </ChakraProvider>
   );
 }
