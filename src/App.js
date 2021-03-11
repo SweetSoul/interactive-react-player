@@ -43,17 +43,17 @@ function App() {
           backgroundColor="#0A0D12"
         >
           <Flex flexDirection='column' w='80%' alignItems='center' my='25px'>
-            <Input id="videoURL"  placeholder="URL do vídeo" maxW='60%' justifySelf='center' onChange={(e) => {setUrl(e.target.value)}} />
-            <Checkbox m='25px' onChange={handleLive}>É uma live?</Checkbox>
-            <Checkbox mt='25px' defaultChecked={true} mb='5px' onChange={() => setUseLogo(!useLogo)}>Usar Logo?</Checkbox>
-            <Input id="videoURL"  placeholder="URL da Logo" maxW='60%' justifySelf='center' 
+            <Input color={defaultSecColor} id="videoURL"  placeholder="URL do vídeo" maxW='60%' justifySelf='center' onChange={(e) => {setUrl(e.target.value)}} />
+            <Checkbox m='25px' color={defaultSecColor} onChange={handleLive}>É uma live?</Checkbox>
+            <Checkbox mt='25px' color={defaultSecColor} defaultChecked={true} mb='5px' onChange={() => setUseLogo(!useLogo)}>Usar Logo?</Checkbox>
+            <Input color={defaultSecColor} id="videoURL"  placeholder="URL da Logo" maxW='60%' justifySelf='center' 
             onChange={(e) => {(e.target.value.length === 0) ? setLogoUrl(defaultLogo) : setLogoUrl(e.target.value)}} 
             />
             <Flex maxW='100%' flexDirection={['column', 'column','column', 'column','row']} justifyContent='center' my='25px'>
-              <Text flexShrink='0'>Escolha a cor primária: </Text>
-              <Input flex='0 0 auto' ml='10px' maxW='10em' alignSelf='center' type='color' defaultValue={defaultColor} onChange={(e) => {setPrimaryColor(e.target.value)}}/>
+              <Text flexShrink='0' color={defaultSecColor}>Escolha a cor primária: </Text>
+              <Input color={defaultSecColor} flex='0 0 auto' ml='10px' maxW='10em' alignSelf='center' type='color' defaultValue={defaultColor} onChange={(e) => {setPrimaryColor(e.target.value)}}/>
             </Flex>
-            <Flex maxW='100%' flexDirection={['column', 'column','column', 'column','row']} justifyContent='center'>
+            <Flex maxW='100%' color={defaultSecColor} flexDirection={['column', 'column','column', 'column','row']} justifyContent='center'>
               <Text flexShrink='0'>Escolha a cor secundária (texto do 'Ao vivo'): </Text>
               <Input flex='0 0 auto' alignSelf='center' ml='10px' maxW='10em' type='color' defaultValue={defaultSecColor} onChange={(e) => {setSecondaryColor(e.target.value)}}/>
             </Flex>
