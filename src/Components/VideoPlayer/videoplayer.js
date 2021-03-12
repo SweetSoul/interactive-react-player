@@ -38,9 +38,9 @@ export default function VideoPlayer(props) {
             return `${mm}:${ss}`
     }
 
-    const {primaryColor, url, useLogo, logoUrl, title, size, isLive, secondaryColor} = props
+    const {primaryColor, url, useLogo, logoUrl, title, size, isLive, secondaryColor, useQuestion} = props
 
-    const {playing, volume, muted, played, seeking} = action
+    const {playing, volume, muted, played} = action
     const playerRef = useRef(null)
     const playerContainerRef = useRef(null)
     const controlsRef = useRef(null)
@@ -119,18 +119,15 @@ export default function VideoPlayer(props) {
     
     const fireVidEvents = (props) => {
         let tick = playerRef.current ? Math.round(playerRef.current.getCurrentTime()) : '';
-        console.log(index)
-        if(index < props.length){
-            if(props[index].fire.time == tick) {
-                console.log(props[index].fire.question);
-                question = props[index].fire.question
+        if(useQuestion === true && props.length > index){
+            if(props[index].tempo == tick) {
+                question = props[index].pergunta
                 setAction({...action, playing: !action.playing});
                 onOpen()
-
                 index += 1
+                }
             }
         }
-    }
 
     const handleSentAnswer = () => {
         let text = answerInput.current.value;

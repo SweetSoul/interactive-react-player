@@ -133,7 +133,7 @@ export default forwardRef(({
                                 
                     <IconButton 
                             color="#999"
-                            _hover={{ color:"#fff" }} 
+                            _hover={{ color:"#ffffff" }} 
                             background= "none"
                             aria-label="Play/Pause Button"
                             size="xs"
@@ -147,7 +147,7 @@ export default forwardRef(({
                         <IconButton 
                             color="#999"
                             ml='20px'
-                            _hover={{ color:"#fff" }} 
+                            _hover={{ color:"#ffffff" }} 
                             background='none' 
                             size='xs' 
                             fontSize='25px' 
@@ -176,14 +176,14 @@ export default forwardRef(({
                                 <SliderThumb />
                             </Slider>
 
-                        <Button color='#fff' ml='16px' fontSize='12px' 
+                        <Button ml='16px' fontSize='12px' 
                         onClick={(isLive) ? seekRecent : onChangeDisplayFormat}
                         p={(isLive) ? '2px 12px 2px 12px' : '0'}
                         background={(isLive) ? `${primaryColor}` : 'none'}
                         fontWeight={(isLive) ? 'bold' : '400'}
                         outline='none'
                         h='80%'
-                        color={(isLive) ? secondaryColor : '#fff'}
+                        color={(isLive) ? secondaryColor : '#ffffff'}
                         boxShadow={(isLive) ? `0 0 10px 7px ${priColorRgba}` : 'none'}
                         _hover={(isLive) ? {boxShadow: 'none'} : {background: 'none', boxShadow:'none'}}
                         > 
@@ -193,7 +193,7 @@ export default forwardRef(({
                         
                         <IconButton 
                             color="#999"
-                            _hover={{ color:"#fff" }} 
+                            _hover={{ color:"#ffffff" }} 
                             background='none' 
                             size='xs' 
                             fontSize='25px' 
