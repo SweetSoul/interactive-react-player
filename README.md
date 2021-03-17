@@ -1,4 +1,4 @@
-# React Player with customs controls
+# React Player with interactive modals and customs controls
 [![DemoLink](https://img.shields.io/badge/DEMO-online-brightgreen)](https://react-live-video-player.vercel.app/)
 <br/>
 This project is a use case! I've implemented custom controls and there is a feature for adding questions when the player reaches given timeframe.
