@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Player with customs controls
+[![DemoLink](https://img.shields.io/badge/DEMO-online-brightgreen)](https://react-live-video-player.vercel.app/)
+<br/><br/>
+This project is a use case! I've implemented custom controls and there is a feature for adding questions when the player reaches given timeframe.
+<br/><br/>
+I've used 
+* [ReactJS](https://reactjs.org) 
+* [ChakraUI](https://chakra-ui.com/)
+* [React Player](https://github.com/cookpete/react-player)
+<br/><br/>
+If you want to test it locally clone the repository, enter it and run:
+`npm start`
+<br/><br/>
+Then access [localhost](http://localhost:3000) as you would in create-react-app developments.
+<br/><br/>
+Most of the project is in English, but some parts are in pt-br.
+<br/><br/>
+## How to use
+<br/>
+The usage is very simple, just follow the steps below.
 
-## Available Scripts
+![Steps](https://sweetsoul.sirv.com/Images/Github/CustomReactPlayer/demo.png)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Video URL (Paste any video URL accepted in [React Player](https://github.com/cookpete/react-player)
+2. Checkbox to set the LiveMode (It's a Live?)
+3. Use logo? (If unchecked removes the logo from the top right corner)
+4. If Use logo is true, the shown logo will be the link in this input or if empty, the chakra UI logo.
+5. Primary color to match the volume and time sliders, as well the `box-shadow` color when liveMode is ON.
+6. Secondary color to use in text inside LiveMode Badge
+7. Ask a question at certain given time. Input 1= Question to be asked >> Input 2= Time in seconds to be displayed.
+8. Add new question inputs
+<br/><br/>
+P.S.: The question in sending the answer to console for now.
