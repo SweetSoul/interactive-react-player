@@ -1,20 +1,20 @@
 # React Player with customs controls
 [![DemoLink](https://img.shields.io/badge/DEMO-online-brightgreen)](https://react-live-video-player.vercel.app/)
-<br/><br/>
+<br/>
 This project is a use case! I've implemented custom controls and there is a feature for adding questions when the player reaches given timeframe.
-<br/><br/>
+<br/>
 I've used 
 * [ReactJS](https://reactjs.org) 
 * [ChakraUI](https://chakra-ui.com/)
 * [React Player](https://github.com/cookpete/react-player)
-<br/><br/>
+<br/>
 If you want to test it locally clone the repository, enter it and run:
 `npm start`
-<br/><br/>
+<br/>
 Then access [localhost](http://localhost:3000) as you would in create-react-app developments.
-<br/><br/>
+<br/>
 Most of the project is in English, but some parts are in pt-br.
-<br/><br/>
+<br/>
 ## How to use
 <br/>
 The usage is very simple, just follow the steps below.
@@ -29,5 +29,5 @@ The usage is very simple, just follow the steps below.
 6. Secondary color to use in text inside LiveMode Badge
 7. Ask a question at certain given time. Input 1= Question to be asked >> Input 2= Time in seconds to be displayed.
 8. Add new question inputs
-<br/><br/>
+<br/>
 P.S.: The question in sending the answer to console for now.
